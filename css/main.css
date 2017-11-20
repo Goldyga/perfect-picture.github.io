@@ -27,7 +27,18 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative; }
+  position: relative;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out; }
+  .head:hover {
+    background-image: url(../imageMin/head-layer.jpg);
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    cursor: pointer; }
   .head__wwwText {
     position: absolute;
     top: 54%;
@@ -130,10 +141,17 @@ body {
   .info__clients {
     background-image: url(../imageMin/clientsImage.png);
     background-size: cover;
-    position: relative; }
+    position: relative;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out; }
     .info__clients:hover {
       background-image: url(../imageMin/clientsLayer.png);
-      transition: all 2s ease-in-out;
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -ms-transition: all 500ms ease-in-out;
+      transition: all 500ms ease-in-out;
       cursor: pointer; }
     .info__clients .bottomText {
       margin-top: 35px;
@@ -157,14 +175,18 @@ body {
     width: 800px;
     background-image: url(../imageMin/singImage.png);
     background-size: cover;
-    position: relative; }
+    position: relative;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out; }
     .info__sign:hover {
       background-image: url(../imageMin/singLayer.png);
       background-size: cover;
-      -webkit-transition: all 2s ease-in-out;
-      -moz-transition: all 2s ease-in-out;
-      -ms-transition: all 2s ease-in-out;
-      transition: all 2s ease-in-out;
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -ms-transition: all 500ms ease-in-out;
+      transition: all 500ms ease-in-out;
       cursor: pointer; }
     .info__sign .bottomText {
       margin-top: 35px;
@@ -183,14 +205,18 @@ body {
     background-color: #82CA9C; }
   .info__new {
     background-image: url(../imageMin/startImage.png);
-    background-size: cover; }
+    background-size: cover;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out; }
     .info__new:hover {
       background-image: url(../imageMin/startLayer.png);
       background-size: cover;
-      -webkit-transition: all 2s ease-in-out;
-      -moz-transition: all 2s ease-in-out;
-      -ms-transition: all 2s ease-in-out;
-      transition: all 2s ease-in-out;
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -ms-transition: all 500ms ease-in-out;
+      transition: all 500ms ease-in-out;
       cursor: pointer; }
     .info__new .arrowImage {
       position: relative;
@@ -227,14 +253,18 @@ body {
   background-size: cover;
   height: 874px;
   margin-top: 145px;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out; }
   .power:hover {
     background-image: url(../imageMin/powerLayer.png);
     cursor: pointer;
-    -webkit-transition: all 2s ease-in-out;
-    -moz-transition: all 2s ease-in-out;
-    -ms-transition: all 2s ease-in-out;
-    transition: all 2s ease-in-out; }
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out; }
   .power__txt {
     padding-top: 397px; }
     .power__txt h1 {
