@@ -7,10 +7,8 @@ body {
 * {
   font-family: "Open Sans", sans-serif; }
 
+/*This generic class selector styles the subtitle containing the page address*/
 .wwwText {
-  position: absolute;
-  top: 513px;
-  left: 0px;
   display: inline-block;
   transform: rotate(-90deg);
   color: #FFFFFF;
@@ -26,56 +24,66 @@ body {
 .head {
   background-image: url(../imageMin/head-image.jpg);
   height: 951px;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   position: relative; }
+  .head__wwwText {
+    position: absolute;
+    top: 54%;
+    left: 0%; }
   .head .header__logo {
-    margin-top: 56px; }
+    position: absolute;
+    top: 6%;
+    left: 15%; }
     .head .header__logo img {
       display: block; }
-  .head .header__row--txt {
-    padding-top: 331px;
-    color: #FFFFFF; }
-    .head .header__row--txt h1 {
-      display: block;
-      margin-top: 0;
-      margin-bottom: 23px;
-      font-size: 60px;
-      font-weight: 100; }
-    .head .header__row--txt p {
-      padding-bottom: 13px;
-      margin: 0;
-      font-size: 13px;
-      font-weight: 600; }
-  .head .header__row--phoneImg {
-    padding-top: 331px;
-    background-image: url(../imageMin/phone.png);
-    background-repeat: no-repeat;
-    background-position: 100%;
-    height: 862px; }
+  .head .header__row {
+    max-width: 26%;
+    position: absolute;
+    top: 45.3%;
+    left: 15%; }
+    .head .header__row--txt {
+      color: #FFFFFF; }
+      .head .header__row--txt h1 {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 23px;
+        font-size: 60px;
+        font-weight: 100; }
+      .head .header__row--txt p {
+        padding-bottom: 13px;
+        margin: 0;
+        font-size: 13px;
+        font-weight: 600; }
 
+/*HEAD SECTION STYLE END*/
 .about {
-  color: #959595; }
-  .about__leftTxt, .about__mobileTxt {
-    font-size: 14px;
-    margin-top: -265px; }
-    .about__leftTxt h1, .about__mobileTxt h1 {
+  color: #959595;
+  position: relative; }
+  .about__leftTxt {
+    padding-top: 73px;
+    font-size: 14px; }
+    .about__leftTxt h1 {
       font-size: 35px;
       color: #222626;
       font-weight: 100; }
-    .about__leftTxt p, .about__mobileTxt p {
+    .about__leftTxt p {
       line-height: 25px;
       margin-bottom: 33px; }
   .about__rightTxt {
     font-size: 14px;
-    margin-top: -84px; }
+    margin-top: -395px;
+    position: absolute;
+    right: 0; }
+    .about__rightTxt--phoneImage {
+      width: 100%;
+      margin-top: -276px; }
     .about__rightTxt p {
       padding-left: 30px;
       margin-bottom: 33px; }
-  .about__mobileTxt {
-    display: none; }
 
+/*ABOUT SECTION STYLE END*/
 .info {
   display: -webkit-flex;
   -moz-flex: flex;
@@ -152,6 +160,10 @@ body {
     position: relative; }
     .info__sign:hover {
       background-image: url(../imageMin/singLayer.png);
+      background-size: cover;
+      -webkit-transition: all 2s ease-in-out;
+      -moz-transition: all 2s ease-in-out;
+      -ms-transition: all 2s ease-in-out;
       transition: all 2s ease-in-out;
       cursor: pointer; }
     .info__sign .bottomText {
@@ -159,8 +171,8 @@ body {
       position: absolute; }
     .info__sign .arrowImage {
       position: relative;
-      top: 33px;
-      left: 83px; }
+      top: 34px;
+      left: 110px; }
     .info__sign .fa-heart-o {
       position: absolute;
       right: 43px;
@@ -175,6 +187,9 @@ body {
     .info__new:hover {
       background-image: url(../imageMin/startLayer.png);
       background-size: cover;
+      -webkit-transition: all 2s ease-in-out;
+      -moz-transition: all 2s ease-in-out;
+      -ms-transition: all 2s ease-in-out;
       transition: all 2s ease-in-out;
       cursor: pointer; }
     .info__new .arrowImage {
@@ -182,11 +197,13 @@ body {
       top: -2px;
       left: 5px; }
 
+/*INFO SECTION STYLE END*/
 .details {
-  margin-top: 90px; }
-  .details .wwwText {
-    left: 39px;
-    top: 2188px;
+  padding-top: 90px;
+  position: relative; }
+  .details__wwwText {
+    position: absolute;
+    top: 33%;
     color: #959595; }
   .details h1 {
     margin: 0 0 47px 0;
@@ -204,6 +221,7 @@ body {
     font-size: 14px;
     color: #959595; }
 
+/*DETAILS SECTION STYLE END*/
 .power {
   background-image: url(../imageMin/powerBckg.png);
   background-size: cover;
@@ -213,6 +231,9 @@ body {
   .power:hover {
     background-image: url(../imageMin/powerLayer.png);
     cursor: pointer;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
     transition: all 2s ease-in-out; }
   .power__txt {
     padding-top: 397px; }
@@ -232,15 +253,16 @@ body {
       top: -1px;
       left: 5px; }
 
+/*POWER SECTION STYLE END*/
 .reason {
   background-image: url(../imageMin/reasonBckg.png);
   background-size: cover;
   height: 536px;
-  color: #FFFFFF; }
-  .reason .wwwText {
-    left: 39px;
-    top: 3598px;
-    color: #959595; }
+  color: #FFFFFF;
+  position: relative; }
+  .reason__wwwText {
+    position: absolute;
+    top: 29%; }
   .reason h1 {
     margin-top: 114px;
     margin-bottom: 47px;
@@ -255,11 +277,16 @@ body {
     line-height: 25px;
     font-size: 14px; }
 
+/*REASON SECTION STYLE END*/
 .buy {
   padding-top: 150px;
   padding-bottom: 60px;
   max-width: 100%;
-  background-color: #eeeff2; }
+  background-color: #EEEFF2;
+  position: relative; }
+  .buy__wwwText {
+    position: absolute;
+    top: 31%; }
   .buy__col {
     text-align: justify; }
   .buy__team {
@@ -320,13 +347,33 @@ body {
     .buy__icon .fa {
       padding-right: 12px; }
 
+/*BUY SECTION STYLE END*/
 .foot {
   padding-top: 115px;
   padding-bottom: 139px;
   color: #FFFFFF;
   background-color: #192431; }
   .foot__stay--message {
+    display: -webkit-flex;
+    -moz-flex: flex;
+    -ms-flex: flex;
+    display: flex;
     width: 100%; }
+    .foot__stay--message textarea {
+      height: 50px;
+      width: 80%;
+      font-size: 35px;
+      overflow: hidden; }
+  .foot__stay button {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-block; }
+    .foot__stay button .btnImage {
+      height: 100%;
+      display: block; }
+    .foot__stay button:hover {
+      opacity: 0.8; }
   .foot__stay--txt {
     font-size: 12px;
     color: #959595; }
@@ -340,5 +387,7 @@ body {
     white-space: nowrap; }
     .foot__point p {
       line-height: 14px; }
+
+/*FOOT SECTION STYLE END*/
 
 /*# sourceMappingURL=main.css.map */
