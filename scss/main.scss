@@ -28,7 +28,6 @@ body {
 	}
 }
 
-
 .head {
 	background-image: url(../imageMin/head-image.jpg);
 	height: 951px;
@@ -446,9 +445,9 @@ body {
 			@include display-flex() 
 			width: 100%;
 
-			textarea {
+			input {
 				height: 50px;
-				width: 80%;
+				width: 100%;
 				font-size: 35px;
 				overflow: hidden;
 			}
@@ -489,3 +488,27 @@ body {
 	}
 }
 /*FOOT SECTION STYLE END*/
+
+
+.moveTop {
+	@include position(fixed, $right: 5%, $bottom: 0);
+	outline: none;
+	cursor: pointer;
+	color: red;
+	font-size: 60px;
+	background-color: transparent;
+	border: none;
+	animation: jumpBtn 3s infinite;
+
+	a {
+		@include position(absolute, $top: 0, $right: 0, $bottom: 0, $left: 0);
+	}
+}
+@keyframes jumpBtn { 
+	0% { bottom: 0; 
+	} 
+	50% { bottom: 20px; 
+	} 
+	100% { bottom: 0; 
+	} 
+}

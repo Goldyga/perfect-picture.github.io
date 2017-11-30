@@ -8,7 +8,7 @@
 }
 @media (max-width: 1199px)  {
 	.head {
-		height: 95vh;
+		height: 100vh;
 	}
 	.about__rightTxt {
 		position: static;
@@ -43,6 +43,9 @@
 	}
 }
 @media (max-width: 992px) {
+	.head:hover {
+		background-image: url(../imageMin/head-image.jpg);
+	}
 	.firstRow, .secondRow {
 		flex-wrap: wrap;
 		justify-content: center;
